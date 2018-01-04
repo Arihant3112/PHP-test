@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loader</title>
+
+<style>
+	.abc{
+            text-align: center;
+            /*font-size: 150%;
+            font-family: myfont;
+            font-weight: bold;*/
+            color: #343434;
+     		font-color:#343434;
+			background-color:#000000;
+	    }
+</style>
+
+</head>
+
+<body>
+	<center>
+
+    <div style="margin:10px;width:98%; height:98%; text-align:center; ">
+
+   <div style="margin:200px auto; width:60%; height:2%; background-color:white; " >
+
+         <font face="Segoe UI Light" color="5C5C5C" size="+6">&nbsp;Registered Successfully</font><br><br><br><br>
+             <div style="margin:0px auto; width:50%; background-color:#DCDCDC; height:1px;" >
+
+                    <div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+                    <div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+             		<div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+                    <div style="width:5.1%; height:1px; float:left; display:none; background-color:#505050;" class="abc"></div>
+
+
+
+             </div>
+  </div>
+
+</div>
+
+    </center>
+<script>
+       var loader = 0;
+        loading();
+
+     function loading()
+ {
+    var i;
+    var blocks = document.getElementsByClassName("abc");
+
+    loader++;
+    if (loader> blocks.length)
+    	{
+    	/*	loader = 1;
+    		for (i = 0; i < blocks.length; i++)
+              {
+                  blocks[i].style.display = "none";
+              }
+         */
+
+          window.location.href='profilemain.php' 
+    	}
+    blocks[loader-1].style.display = "block";
+    setTimeout(loading, 150);
+
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home trial</title>
+<script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+
+<link href="historymap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="onload()">
+
+<div style="width:100%; height:1350px; clear:left; " id="myDiv">
+
+        <div class="nav-left" style="width:100%; height:250px; float:left;">
+
+        	<ul class="navbar" style="width:100%; height:50px; float:left; " >
+            	<li class="nosrh"><a href="home trial.html" class="active" id="nav1">HOME</a></li>
+                <li class="nosrh"><a href="#top10" id="nav3">MOST ELITE</a></li>
+                <li class="nosrh"><a href="nr.html" id="nav2">NEWS & REVIEWS</a></li>
+                <li class="nosrh"><a href="ask.html" id="nav4">ASK US</a></li>
+
+				
+                <li class="search" style="float:none;"><center><input type="search" placeholder="Search" id="nav-srh"></center></li>
+                
+                <li class="nosrh" style="float:right;"><a href="login.html" id="lgin">LOGIN / SIGN UP</a></li>
+            	<li class="nosrh" style="float:right;" onClick="search()"><a href="#search" id="navsrch">SEARCH</a></li>
+                
+            </ul>
+
+        <div style="width:100%; height:50px; float:left">
+
+        </div>
+
+       
+
+        <!--<br><center><hr class="style1" style="width:50%; float:none; color:#000000;"></center>-->
+
+		<div style="width:100%; height:300px; background-color:white; float:left;">
+        		<center></center>
+        </div>
+        
+        
+        <div style="width:100%; height:400px; float:left; background-color:white;">
+							       <div class="slide"><img class="slider animate-fading" src="slideshow trial/GooglePixelslideshow.jpg"></div>
+							       <div class="slide"><img class="slider animate-fading" src="slideshow trial/iPhone7slideshow.jpg"></div>
+							       <div class="slide"><img class="slider animate-fading" src="slideshow trial/nexus6pslideshow.jpg"></div>
+                                   <div class="slide"><img class="slider animate-fading" src="slideshow trial/S7-edge_S7slideshow.jpg"></div>
+							       <div class="slide"><img class="slider animate-fading" src="slideshow trial/motozslideshow.jpg"></div>
+							       <div class="slide"><img class="slider animate-fading" src="slideshow trial/LG-G5slideshow.jpg"></div>
+                                   <div class="slide"><img class="slider animate-fading" src="slideshow trial/OnePlus-3slideshow.jpg"></div>
+							      
+        </div>
+        
+        
+
+		
+        
+
+        <!--<br><center><hr class="style1" style="width:50%; float:none; color:#000000;"></center>-->
+
+
+        <div style="width:100%; height:1000px; float:left;">
+       		<center>
+            	<br><br>
+            	<font color="#666666" face="Segoe UI light" size="+5">ORIGINATORS</font>
+             	<br><br><br><br>
+
+            
+
+           
+			
+           <div style="width:100%; height:300px; float:inherit; background-color:#CBCBCB;">
+
+
+            <a href="#google">
+            <div class="polaroid" style="background-image:url(Card/googlelogo.jpg); width:250px; height:300px; background-repeat:no-repeat;">
+            </div>
+			</a>
+            
+            
+            
+            <a href="#lg">
+            <div class="polaroid" style="background-image:url(Card/LGlogo.jpg); width:250px; height:300px; background-repeat:no-repeat;">
+       		</div>
+			</a>
+            
+
+			<a href="#motorola">
+            <div class="polaroid" style="background-image:url(Card/Motorolalogo.jpg); width:250px; height:300px; background-repeat:no-repeat;">
+            </div>
+			</a>
+            
+            <a href="#oneplus">
+            <div class="polaroid" style="background-image:url(Card/onepluslogo.jpg); width:250px; height:300px; background-repeat:no-repeat;">
+            </div>
+			</a>
+            
+            <a href="#samsung">
+            <div class="polaroid" style="background-image:url(Card/samsunglogo.jpg); width:250px; height:300px; background-repeat:no-repeat;">
+            </div>
+			</a>
+            
+            <a href="#apple">
+            <div class="polaroid" style="background-image:url(Card/Applelogo.jpg); width:250px; height:300px; background-repeat:no-repeat;">
+            </div>
+			</a>
+            
+           </div>
+			</center>
+       </div>
+
+
+
+      <div style="width:100%; height:200px; float:left; background-color:white;">
+      <center>
+      <font face="Segoe UI Light" color="">
+      	<form>
+      		
+            <div style="width:75%; height:100px; float:none;" class="formhome"> <input style="width:80%;" type="email" placeholder="SUBSCRIBE US" class="homeform"><a href="#homesubmit"><input  style="width:15%; margin-left:0%; cursor:pointer;" type="button" class="home-submit ripple"data-ripple-color="#C9C9C9" value="SUBMIT"/></a></div
+            
+             
+            
+      	</form>
+      	</font>
+        </center>
+      </div>
+		
+
+</div>
+
+<script>
+	    var slideIndex = 0;
+        showSlides();
+	var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+     function showSlides() 
+ {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) 
+         {
+         	slides[i].style.display = "none"; 
+         }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+	slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000);
+	
+
+}
+</script>
+<script src="common.js"></script>
+
+</body>
+
+</html>

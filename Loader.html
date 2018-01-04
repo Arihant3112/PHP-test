@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loader</title>
+
+<style>
+	.abc{
+            text-align: center;
+            /*font-size: 150%;
+            font-family: myfont;
+            font-weight: bold;*/
+            color: #343434;
+     		font-color:#343434;
+			background-color:#000000;
+	    }
+	body,html
+	{
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+</head>
+
+<body>
+	<center>
+
+    <div style="margin:10px;width:98%; height:98%; text-align:center; ">
+
+   <div style="margin:200px auto; width:60%; height:2%; background-color:white; " >
+
+         <font face="Segoe UI Light" color="5C5C5C" size="+6">&nbsp;Loading...</font><br><br><br><br>
+             <div style="margin:0px auto; width:50%; background-color:#DCDCDC; height:1px;" >
+
+                    <div id="myBar" style="width: 0%; height: 1px; background-color:#505050; float:none;" class="abc">
+
+
+
+             </div>
+  </div>
+
+</div>
+		</div>
+</center>
+
+
+
+
+
+<script>
+
+ var call = setInterval(move,1000);
+	function move() 
+{
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+	clearInterval(call);
+  var id = setInterval(frame, 20);
+  function frame() {
+    if (width >= 100) 
+	{
+      clearInterval(id);
+		window.location.href='home trial.php';
+    }
+	else 
+	{
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+	
+</script>
+
+</body>
+</html>
